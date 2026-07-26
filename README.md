@@ -1,6 +1,13 @@
 # MouseTrac - Newest Version is 1.1 - [Download Here](https://github.com/MrWin004/MouseTrac/releases)
 This is MouseTrac, an app that helps moves your cursor. This project was created to try to help [BOG](https://www.youtube.com/@bogxd) with his project of trying to move his mouse cursor back to a specific spot after he messed up in his recordings. The reason he wanted to create this app was every time he would cut that part out, he mouse cursor would move. You can view the full video [here](https://youtu.be/vlXdUU5pd_0?si=DrUeQvg80a9JyCaj).
 
+Notes for the newest update:
+- Updated Logo
+
+
+---
+
+
 # Notes Before You Download
 1. This app is **FULLY** vibecoded with ChatGPT (I have a 5% coding knowledge)
 2. This app was tested on a M2 MacBook Air running Tahoe 26.5.2 (i have **no** idea if this works on other types of macs so good luck.)
