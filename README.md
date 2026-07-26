@@ -13,7 +13,7 @@ This is MouseTrac, an app that helps moves your cursor. This project was created
 - You are able to send a nofication every time you save or reload your position.
 
 # How To Get MouseTrac Working
-1. Download the .dmg file from Releases. (Download the lastest one)
+1. Download the .dmg file [from Releases](https://github.com/MrWin004/MouseTrac/releases). (Download the lastest one) 
 2. Open the .dmg file and drag the app (named MouseTrac) into the Applications folder and open the MouseTrac app (in the Application folder).
 3. Open the MouseTrac app. You should get a error like this: `MouseTrac Not Opened: Apple could not verify "Mousetrac is free of malware that may har your Mac or compromise your privacy.` The reason you get the *malware* error is because I would have to pay *$99 dollars a year* to publish the app. (which I am ***not*** doing.
 4. To avoid the error open settings, scroll to the Privacy & Security section, scroll down, and under the Security section you'll see something like this: `"MouseTrac" was blocked to protect your Mac.` Click the Open Anyway button and give access to settings.
