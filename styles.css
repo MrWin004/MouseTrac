@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #202124;
+  background: #f7f4ef;
+}
+
+.app {
+  width: min(720px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 28px 0 40px;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 6px 0 0;
+  color: #5f6368;
+  line-height: 1.45;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #ded9cf;
+  border-radius: 8px;
+  padding: 18px;
+  margin: 14px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.badge {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 13px;
+  background: #ece7dc;
+  color: #51483b;
+}
+
+.badge.good {
+  background: #dff3e4;
+  color: #176b35;
+}
+
+.badge.warn {
+  background: #fff0cf;
+  color: #7a4b00;
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 48px;
+}
+
+.position span:first-child {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.position span:last-child {
+  color: #6f7478;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+button {
+  appearance: none;
+  border: 1px solid #c9c3b8;
+  background: #f7f4ef;
+  color: #202124;
+  border-radius: 7px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eee8dc;
+}
+
+button.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+button.primary:hover {
+  background: #1d4ed8;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.row + .row {
+  border-top: 1px solid #ece7dc;
+}
+
+.row strong {
+  display: block;
+  font-size: 15px;
+}
+
+.row small {
+  display: block;
+  color: #6f7478;
+  margin-top: 3px;
+  line-height: 1.35;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.sliderRow {
+  display: grid;
+  grid-template-columns: 1fr 110px 28px;
+  align-items: center;
+  gap: 12px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #c9c3b8;
+  border-radius: 7px;
+  padding: 10px 12px;
+  font-size: 14px;
+  background: white;
+  color: #202124;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.field span {
+  font-weight: 650;
+}
+
+#hotkeyHelp,
+#hotkeyStatus {
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  header,
+  .row,
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .field,
+  .sliderRow {
+    grid-template-columns: 1fr;
+  }
+
+  .position span:first-child {
+    font-size: 18px;
+  }
+}

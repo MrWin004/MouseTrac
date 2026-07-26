@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MouseTrac</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <h1>MouseTrac</h1>
+        <p>Save your cursor spot and snap back after a recording mistake.</p>
+      </div>
+      <div id="permissionBadge" class="badge">Checking</div>
+    </header>
+
+    <section class="panel">
+      <h2>Current Saved Position</h2>
+      <div class="position">
+        <span id="positionText">No position saved yet</span>
+        <span id="positionTime"></span>
+      </div>
+      <div class="actions">
+        <button id="saveNow">Save Now</button>
+        <button id="restoreNow" class="primary">Restore Now</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Modes</h2>
+
+      <label class="row">
+        <span>
+          <strong>Auto-save when still</strong>
+          <small>Saves once after the mouse has not moved for the chosen time.</small>
+        </span>
+        <input id="autoMode" type="checkbox" />
+      </label>
+
+      <label class="row">
+        <span>
+          <strong>Manual save hotkey</strong>
+          <small>Press the save shortcut to overwrite the saved position.</small>
+        </span>
+        <input id="manualMode" type="checkbox" />
+      </label>
+    </section>
+
+    <section class="panel">
+      <h2>Timing</h2>
+      <div class="sliderRow">
+        <input id="intervalSlider" type="range" min="100" max="10000" step="100" />
+        <input id="intervalBox" type="number" min="100" max="10000" step="100" />
+        <span>ms</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Hotkeys</h2>
+
+      <label class="field">
+        <span>Save position</span>
+        <input id="saveHotkey" type="text" readonly />
+      </label>
+
+      <label class="field">
+        <span>Restore position</span>
+        <input id="restoreHotkey" type="text" readonly />
+      </label>
+
+      <p id="hotkeyHelp">Click a hotkey field, then press the shortcut you want.</p>
+      <p id="hotkeyStatus"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Notifications</h2>
+
+      <label class="row">
+        <span>
+          <strong>Notify when saved</strong>
+          <small>Off by default.</small>
+        </span>
+        <input id="notifyOnSave" type="checkbox" />
+      </label>
+
+      <label class="row">
+        <span>
+          <strong>Notify when restored</strong>
+          <small>Off by default.</small>
+        </span>
+        <input id="notifyOnRestore" type="checkbox" />
+      </label>
+    </section>
+
+    <section class="panel">
+      <h2>Permission</h2>
+      <p>MouseTrac needs Accessibility permission so it can listen for shortcuts and move the cursor.</p>
+      <button id="permissionButton">Open Accessibility Settings</button>
+    </section>
+  </main>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>

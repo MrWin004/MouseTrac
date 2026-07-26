@@ -1,0 +1,31 @@
+{
+  "name": "mousetrac",
+  "version": "1.0.0",
+  "description": "Save and restore your mouse position while screen recording.",
+  "main": "src/main.js",
+  "author": "MouseTrac",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "electron-builder --mac dir --arm64"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.2"
+  },
+  "devDependencies": {
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.mousetrac.app",
+    "productName": "MouseTrac",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "dir"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ]
+  }
+}
